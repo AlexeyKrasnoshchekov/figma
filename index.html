@@ -10,90 +10,122 @@
 </head>
 <body>
     <header>
-        <h1>Архитектурный</h1>
+        <h1 class="flex justify-center">
+            <img src="img/Vector.png" alt="Архитектурный блог" class="w-70 h-10 mt-5 mb-10">
+        </h1>
         <nav>
-            <ul>
-                <li>
+            <ul class="flex justify-center text-base mb-4">
+                <li class="mr-4">
                     <a href="#">
                         Современные здания
                     </a>
                 </li>
-                <li><a href="#">Старинные здания</a></li>
-                <li><a href="#">Последние проекты</a></li>
+                <li class="mr-4"><a href="#">Старинные здания</a></li>
+                <li class="mr-4"><a href="#">Последние проекты</a></li>
                 <li><a href="#">Архитектурные новости</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="news">
-            <div class="news__post">
-                <h2>Самые актуальные архитектурные новости</h2>
-                <a href="№">Смотреть</a>
-            </div>
-            <div class="news__post">
-                <h2>Архитектурная мода 2019 года</h2>
-                <a href="№">Смотреть</a>
-            </div>
-            <div class="news__post">
-                <h2>Современные строения</h2>
-                <a href="№">Смотреть</a>
-            </div>
+        <section class="news px-20">
+ 
+                <div class="news__container grid grid-cols-2">
+                    <div class="news__post relative">
+                        <img src="img/news/Bitmap.png" alt="Архитектурный блог" class="mt-5 mb-10 relative">
+                        <h2 class="absolute top-0 ml-2 mt-5 text-white">Самые актуальные архитектурные новости</h2>
+                        <a href="№" class="absolute top-0 ml-2 mt-20 text-white">Смотреть</a>
+                    </div>
+                    <div class="grid-container">
+                        <div class="news__post relative mx-0 my-0">
+                            <div class=""><img src="img/news/Image_01.png" alt="Архитектурный блог" class="mt-5 relative"></div>
+                            <h2 class="absolute top-0 ml-2 mt-2 text-white">Архитектурная мода 2019 года</h2>
+                            <a href="№" class="absolute top-0 ml-2 mt-10 text-white">Смотреть</a>
+                        </div>
+                        <div class="news__post relative my-0">
+                            <img src="img/news/Image_02.png" alt="Архитектурный блог" class="relative">
+                            <h2 class="absolute top-0 ml-2 mt-2 text-white">Современные строения</h2>
+                            <a href="№" class="absolute top-0 ml-2 mt-10 text-white">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+
             <div class="news__slider"></div>
         </section>
-        <section class="modern">
-            <a href="#" class="modern__button">Современные здания</a>
-            <div class="office__container">
-                <div class="office__post"></div>
-                <h2 class="office__h2">Офисные здания</h2>
-            </div>
-            <div class="living__container">
-                <div class="living__post"></div>
-                <div class="living__post"></div>
-                <div class="living__post"></div>
-                <h2 class="living__h2">Жилые помещения</h2>
+        <section class="modern px-20">
+            <a href="#" class="modern__button btn bg-red-500 text-white">Современные здания</a>
+            <div class="modern__container grid grid-cols-2">
+                <div class="office__container flex-col">
+                    <img src="img/modern/sasha-yudaev-FOYsU4uQqqM-unsplash 1.jpg" alt="Архитектурный блог" class="">   
+                    <h2 class="office__h2">Офисные здания</h2>
+                </div>
+                <div class="living__container flex-col">
+                    <div class="grid grid-cols-2">
+                        <img src="img/modern/yann-allegre-v1jO6pN45_4-unsplash 1.jpg" alt="Архитектурный блог" class="">
+                        <img src="img/modern/jude-beck-sPuSvj2g_C8-unsplash 1.jpg" alt="Архитектурный блог" class="">
+                        <img src="img/modern/mark-boss-Xf2kJBZ2aJA-unsplash 1.jpg" alt="Архитектурный блог" class="col-span-2">
+                    </div>
+                    <h2 class="living__h2">Жилые помещения</h2>
+                </div>
             </div>
         </section>
-        <section class="email">
-            <h2 class="email__h2"></h2>
-            <input type="email" class="email__input" placeholder="Введите Ваш e-mail">
-            <button class="email__button" type="button">Подписаться</button>
+        <section class="email w-full bg-gray-300 flex h-32 justify-center">
+            <div class="wrapper mt-8">
+                <h2 class="email__h2 text-lg mb-4">Подпишитесь на нашу e-mail рассылку</h2>
+                <div class="flex justify-center">
+                    <input type="email" class="email__input" placeholder="Введите Ваш e-mail">
+                    <button class="email__button ml-4" type="button">Подписаться</button>
+                </div>
+            </div>
         </section>
         <section class="old">
-            <a href="#" class="old__button">Старинные здания</a>
-            <div class="religion__container">
-                <div class="religion__post"></div>
-                <h2 class="religion__h2">Религиозные строения</h2>
-            </div>
-            <div class="turism__container">
-                <div class="turism__post"></div>
-                <div class="turism__post"></div>
-                <div class="turism__post"></div>
-                <h2 class="turism__h2">Туристические здания</h2>
+            <a href="#" class="old__button btn bg-red-500 text-white">Старинные здания</a>
+            <div class="grid grid-cols-2">
+                <div class="religion__container flex-col">
+                    <img src="img/religion/krishna-moorthy-d-SPvxAdwoUzw-unsplash 1.jpg" alt="Архитектурный блог" class="">  
+                    <h2 class="religion__h2">Религиозные строения</h2>
+                </div>
+                <div class="turism__container flex-col">
+                    <div class="grid grid-cols-2">
+                        <div class="flex-col">
+                            <img src="img/religion/ashim-d-silva-_4HhZOUEwmw-unsplash 1.jpg" alt="Архитектурный блог" class="">
+                            <img src="img/religion/yeo-khee-hyZ8ln856Ag-unsplash 1.jpg" alt="Архитектурный блог" class="">
+                        </div>
+                        <img src="img/religion/filip-gielda-VPavA7BBxK0-unsplash 1.jpg" alt="Архитектурный блог" class="">  
+                    </div>  
+                    <h2 class="turism__h2">Туристические здания</h2>
+                    
+                </div>
             </div>
         </section>
-        <section class="unususal">
-            <button type="button" class="unususal__button">Архитектурные новости</button>
-            <h2 class="unusual__h2">Самые необычные здания <span>во всем мире</span></h2>
-            <a href="№">Смотреть</a>
+        <section class="unususal w-full relative">
+            <img src="img/unusual.png" alt="Архитектурный блог" class="relative">
+            <button type="button" class="unususal__button btn bg-red-500 text-white absolute top-0 ml-2 mt-5">Архитектурные новости</button>
+            <h2 class="unusual__h2 text-lg absolute top-0 ml-2 mt-40 text-white">Самые необычные здания <span>во всем мире</span></h2>
+            <a href="№" class="absolute top-0 ml-2 mt-48 text-white">Смотреть</a>
             <div class="unusual__slider"></div>
             <div class="unusual__arrow-left"></div>
             <div class="unusual__arrow-right"></div>
         </section>
-        <section class="email">
-            <h2 class="email__h2"></h2>
-            <input type="email" class="email__input" placeholder="Введите Ваш e-mail">
-            <button class="email__button" type="button">Подписаться</button>
+        <section class="email w-full bg-gray-300 flex h-32 justify-center">
+            <div class="wrapper mt-8">
+                <h2 class="email__h2 text-lg mb-4">Подпишитесь на нашу e-mail рассылку</h2>
+                <div class="flex justify-center">
+                    <input type="email" class="email__input" placeholder="Введите Ваш e-mail">
+                    <button class="email__button ml-4" type="button">Подписаться</button>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li class="social-icon"></li>
-            <li class="social-icon"></li>
-            <li class="social-icon"></li>
-            <li class="social-icon"></li>
-            <li class="social-icon"></li>
-            <li class="social-icon"></li>
-            <li class="social-icon"></li>
+    <footer class="w-full h-32 bg-gray-600">
+        <ul class="flex justify-center">
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
         </ul>
     </footer>
 </body>
