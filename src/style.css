@@ -5,9 +5,5 @@
 @tailwind utilities;
 
 .btn {
-    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
-}
-
-.header-h1 {
-    width: 260;
+    @apply py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
 }

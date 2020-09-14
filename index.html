@@ -34,16 +34,19 @@
     } */
 
     /* Делаем слой с разметкой полупрозрачным */
+    BODY {
+    opacity: .5;
+  }
 
     </style>
 </head>
 <body>
     <header>
         <h1 class="flex justify-center">
-            <img src="img/Vector.png" alt="Архитектурный блог" class="header-h1 h-8 mt-21 mb-12">
+            <img src="img/Vector.png" alt="Архитектурный блог" class="w-64 h-8 mt-21 mb-12">
         </h1>
         <nav>
-            <ul class="flex justify-center text-sm mb-4">
+            <ul class="flex justify-center text-sm mb-5">
                 <li class="mr-10"><a href="#">Современные здания</a></li>
                 <li class="mr-10"><a href="#">Старинные здания</a></li>
                 <li class="mr-10"><a href="#">Последние проекты</a></li>
@@ -52,29 +55,31 @@
         </nav>
     </header>
     <main>
-        <section class="news px-20">
+        <section class="news px-64">
  
-                <div class="news__container grid grid-cols-2">
-                    <div class="news__post relative">
-                        <img src="img/news/Bitmap.png" alt="Архитектурный блог" class="mt-5 mb-10 relative">
-                        <h2 class="absolute top-0 ml-2 mt-5 text-white">Самые актуальные архитектурные новости</h2>
-                        <a href="№" class="absolute top-0 ml-2 mt-20 text-white">Смотреть</a>
-                    </div>
-                    <div class="grid-container">
-                        <div class="news__post relative mx-0 my-0">
-                            <div class=""><img src="img/news/Image_01.png" alt="Архитектурный блог" class="mt-5 relative"></div>
-                            <h2 class="absolute top-0 ml-2 mt-2 text-white">Архитектурная мода 2019 года</h2>
-                            <a href="№" class="absolute top-0 ml-2 mt-10 text-white">Смотреть</a>
+                <div class="news__container w-92 flex justify-center pl-1" >
+                    <!-- <div class="grid grid-cols-2" style="outline: 2px solid yellow"> -->
+                        <div class="news__post relative">
+                            <img src="img/news/Bitmap.png" alt="Архитектурный блог" class="relative pr-2">
+                            <h2 class="absolute top-0 text-2xl w-70 ml-12 mt-43 text-white">Самые актуальные архитектурные новости</h2>
+                            <a href="№" class="absolute btn w-36 text-center ml-12 top-0 ml-2 mt-65 text-white border-white border-2">Смотреть</a>
                         </div>
-                        <div class="news__post relative my-0">
-                            <img src="img/news/Image_02.png" alt="Архитектурный блог" class="relative">
-                            <h2 class="absolute top-0 ml-2 mt-2 text-white">Современные строения</h2>
-                            <a href="№" class="absolute top-0 ml-2 mt-10 text-white">Смотреть</a>
+                        <div class="grid-wrapper">
+                            <div class="news__post relative mx-0 my-0">
+                                <div class=""><img src="img/news/Image_01.png" alt="Архитектурный блог" class="relative"></div>
+                                <h2 class="absolute top-0 ml-2 mt-2 w-34 ml-6 text-lg mt-12 text-white">Архитектурная мода 2019 года</h2>
+                                <a href="№" class="absolute btn w-37 text-center ml-6 top-0 mt-31 text-white border-white border-2">Смотреть</a>
+                            </div>
+                            <div class="news__post relative mt-1">
+                                <img src="img/news/Image_02.png" alt="Архитектурный блог" class="relative">
+                                <h2 class="absolute top-0 ml-2 mt-2 w-34 ml-6 text-lg mt-12 text-white">Современные строения</h2>
+                                <a href="№" class="absolute btn w-37 text-center ml-6 top-0 mt-31 text-white border-white border-2">Смотреть</a>
+                            </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
 
-            <div class="news__slider"></div>
+            <div class="news__slider h-12"></div>
         </section>
         <section class="modern px-20">
             <a href="#" class="modern__button btn bg-red-500 text-white">Современные здания</a>
