@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="public/style.css">
     <link href="../figma/node_modules/pixel-glass/styles.css" rel="stylesheet">
     
-    <style>
+    <!-- <style>
         HTML {
         padding: 0px;
         margin: 0px;
@@ -18,10 +18,10 @@
         background-image: url( 'img/Desktop1.jpg' );
         /* background-size: contain; */
         background-size: cover;
-    }
+    } -->
 
 
-    /* @media (min-width: 768px) {
+    <!-- /* @media (min-width: 768px) {
         HTML {
         background-image: url( 'img/preview/sedona-index-tablet.png' );
         }
@@ -34,11 +34,11 @@
     } */
 
     /* Делаем слой с разметкой полупрозрачным */
-    BODY {
+    /* BODY {
     opacity: .5;
-  }
+  } */
 
-    </style>
+    /* </style> */ -->
 </head>
 <body>
     <header>
@@ -84,13 +84,13 @@
             <a href="#" class="modern__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full">Современные здания</a>
             <div class="modern__container flex mt-3">
                 <div class="office__container pr-10">
-                    <img src="img/modern/sasha-yudaev-FOYsU4uQqqM-unsplash 1.jpg" alt="Архитектурный блог" class="w-79 ml-1" style="outline:1px solid yellow">   
+                    <img src="img/modern/sasha-yudaev-FOYsU4uQqqM-unsplash 1.jpg" alt="Архитектурный блог" class="w-79 ml-1">   
                     <h2 class="office__h2 mt-3 ml-1 text-lg">Офисные здания</h2>
                 </div>
                 <div class="living__container flex-col mr-1">
                     <div class="grid grid-cols-2">
-                        <img src="img/modern/yann-allegre-v1jO6pN45_4-unsplash 1.jpg" alt="Архитектурный блог" class="w-58" style="outline:1px solid yellow" >
-                        <img src="img/modern/jude-beck-sPuSvj2g_C8-unsplash 1.jpg" alt="Архитектурный блог" class="w-62 mr-1 mb-4" style="outline:1px solid yellow">
+                        <img src="img/modern/yann-allegre-v1jO6pN45_4-unsplash 1.jpg" alt="Архитектурный блог" class="w-58" >
+                        <img src="img/modern/jude-beck-sPuSvj2g_C8-unsplash 1.jpg" alt="Архитектурный блог" class="w-62 mr-1 mb-4">
                         <img src="img/modern/mark-boss-Xf2kJBZ2aJA-unsplash 1.jpg" alt="Архитектурный блог" class="col-span-2 mb-1">
                     </div>
                     <h2 class="living__h2 ml-1 text-lg">Жилые помещения</h2>
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </section>
-        <section class="old px-64 mt-18 mb-22">
+        <section class="old px-64 mt-18 mb-18">
             <a href="#" class="old__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full">Старинные здания</a>
             <div class="grid grid-cols-2 mt-6">
                 <div class="religion__container flex-col">
@@ -116,45 +116,45 @@
                 <div class="turism__container flex-col">
                     <div class="flex">
                         <div class="flex-col mr-8">
-                            <img src="img/religion/ashim-d-silva-_4HhZOUEwmw-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8 mb-2" style="outline:1px solid yellow">
-                            <img src="img/religion/yeo-khee-hyZ8ln856Ag-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8" style="outline:1px solid yellow">
+                            <img src="img/religion/ashim-d-silva-_4HhZOUEwmw-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8 mb-2">
+                            <img src="img/religion/yeo-khee-hyZ8ln856Ag-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8">
                         </div>
-                        <img src="img/religion/filip-gielda-VPavA7BBxK0-unsplash 1.jpg" alt="Архитектурный блог" class="w-38 ml-4 mr-2" style="outline:1px solid yellow">  
+                        <img src="img/religion/filip-gielda-VPavA7BBxK0-unsplash 1.jpg" alt="Архитектурный блог" class="w-38 ml-4 mr-2">  
                     </div>  
                     <h2 class="turism__h2 ml-8 mt-2 text-lg">Туристические здания</h2>
                     
                 </div>
             </div>
         </section>
-        <section class="unususal w-full relative">
-            <img src="img/unusual.png" alt="Архитектурный блог" class="relative">
-            <button type="button" class="unususal__button btn bg-red-500 text-white absolute top-0 ml-2 mt-5">Архитектурные новости</button>
-            <h2 class="unusual__h2 text-lg absolute top-0 ml-2 mt-40 text-white">Самые необычные здания <span>во всем мире</span></h2>
-            <a href="№" class="absolute top-0 ml-2 mt-48 text-white">Смотреть</a>
+        <section class="unususal w-full relative h-82 flex justify-center" style="background: url(img/unusual.png)">
+            <!-- <img src="img/unusual.png" alt="Архитектурный блог" class="relative"> -->
+            <button type="button" class="unususal__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full absolute top-0 mt-13">Архитектурные новости</button>
+            <h2 class="unusual__h2 w-87 ml-12 text-5xl absolute top-0 mr-12 mt-36 text-center leading-12 text-white">Самые необычные здания <span>во всем мире</span></h2>
+            <a href="№" class="absolute top-0 ml-2 mt-48 w-37 mr-1 py-1 text-center top-0 ml-2 mt-65 text-white border-white border-2">Смотреть</a>
             <div class="unusual__slider"></div>
             <div class="unusual__arrow-left"></div>
             <div class="unusual__arrow-right"></div>
         </section>
-        <section class="email w-full bg-gray-300 flex h-32 justify-center">
-            <div class="wrapper mt-8">
-                <h2 class="email__h2 text-lg mb-4">Подпишитесь на нашу e-mail рассылку</h2>
+        <section class="email w-full bg-gray-300 flex h-56 justify-center pb-16">
+            <div class="wrapper mt-16">
+                <h2 class="email__h2 text-2xl mb-4">Подпишитесь на нашу e-mail рассылку</h2>
                 <div class="flex justify-center">
-                    <input type="email" class="email__input" placeholder="Введите Ваш e-mail">
-                    <button class="email__button ml-4" type="button">Подписаться</button>
+                    <input type="email" class="email__input w-60 border-gray-400 border-2 ml-2 h-10" placeholder="Введите Ваш e-mail">
+                    <button class="email__button mr-2 btn w-36 text-center top-0 text-white bg-gray-700" type="button">Подписаться</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="w-full h-32 bg-gray-600">
-        <ul class="flex justify-center">
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f text-white border-white rounded-md"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter text-white border-white rounded-md"></i></li>
+    <footer class="w-full  bg-gray-900">
+        <ul class="flex justify-center items-center h-24">
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
         </ul>
     </footer>
     <script src="../figma/node_modules/pixel-glass/script.js"></script>
