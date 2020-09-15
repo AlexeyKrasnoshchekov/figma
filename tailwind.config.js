@@ -65,6 +65,8 @@ module.exports = {
       '15': '5rem',
     },
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active']
+  },
   plugins: [],
 }

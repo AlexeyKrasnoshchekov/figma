@@ -47,114 +47,120 @@
         </h1>
         <nav>
             <ul class="flex justify-center text-sm mb-5">
-                <li class="mr-10"><a href="#">Современные здания</a></li>
-                <li class="mr-10"><a href="#">Старинные здания</a></li>
-                <li class="mr-10"><a href="#">Последние проекты</a></li>
-                <li><a href="#">Архитектурные новости</a></li>
+                <li class="mr-10 hover:underline"><a href="#">Современные здания</a></li>
+                <li class="mr-10 hover:underline"><a href="#">Старинные здания</a></li>
+                <li class="mr-10 hover:underline"><a href="#">Последние проекты</a></li>
+                <li class="hover:underline"><a href="#">Архитектурные новости</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="news px-64 mb-22">
+        <section class="news md:flex justify-center mb-22">
  
-                <div class="news__container w-92 flex justify-center pl-1" >
+                <div class="news__container md:w-92 flex justify-center pl-1" style="outline: 1px solid yellow">
                     <!-- <div class="grid grid-cols-2" style="outline: 2px solid yellow"> -->
                         <div class="news__post relative">
                             <img src="img/news/Bitmap.png" alt="Архитектурный блог" class="relative pr-2">
                             <h2 class="absolute top-0 text-2xl w-70 ml-12 mt-43 text-white">Самые актуальные архитектурные новости</h2>
-                            <a href="№" class="absolute btn w-36 text-center ml-12 top-0 ml-2 mt-65 text-white border-white border-2">Смотреть</a>
+                            <a href="№" class="absolute btn w-36 text-center ml-12 top-0 ml-2 mt-65 text-white border-white border-2 hover:bg-white hover:text-red-500">Смотреть</a>
                         </div>
                         <div class="grid-wrapper">
                             <div class="news__post relative mx-0 my-0">
                                 <div class=""><img src="img/news/Image_01.png" alt="Архитектурный блог" class="relative"></div>
                                 <h2 class="absolute top-0 ml-2 mt-2 w-34 ml-6 text-lg mt-12 text-white">Архитектурная мода 2019 года</h2>
-                                <a href="№" class="absolute btn w-37 text-center ml-6 top-0 mt-31 text-white border-white border-2">Смотреть</a>
+                                <a href="№" class="absolute btn w-37 text-center ml-6 top-0 mt-31 text-white border-white border-2 hover:bg-white hover:text-red-500">Смотреть</a>
                             </div>
                             <div class="news__post relative mt-1">
                                 <img src="img/news/Image_02.png" alt="Архитектурный блог" class="relative">
                                 <h2 class="absolute top-0 ml-2 mt-2 w-34 ml-6 text-lg mt-12 text-white">Современные строения</h2>
-                                <a href="№" class="absolute btn w-37 text-center ml-6 top-0 mt-31 text-white border-white border-2">Смотреть</a>
+                                <a href="№" class="absolute btn w-37 text-center ml-6 top-0 mt-31 text-white border-white border-2 hover:bg-white hover:text-red-500">Смотреть</a>
                             </div>
                         </div>
                     <!-- </div> -->
                 </div>
                 <div class="news-slider h-10"></div>
         </section>
-        <section class="modern px-64 mb-18">
-            <a href="#" class="modern__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full">Современные здания</a>
-            <div class="modern__container flex mt-3">
-                <div class="office__container pr-10">
-                    <img src="img/modern/sasha-yudaev-FOYsU4uQqqM-unsplash 1.jpg" alt="Архитектурный блог" class="w-79 ml-1">   
-                    <h2 class="office__h2 mt-3 ml-1 text-lg">Офисные здания</h2>
-                </div>
-                <div class="living__container flex-col mr-1">
-                    <div class="grid grid-cols-2">
-                        <img src="img/modern/yann-allegre-v1jO6pN45_4-unsplash 1.jpg" alt="Архитектурный блог" class="w-58" >
-                        <img src="img/modern/jude-beck-sPuSvj2g_C8-unsplash 1.jpg" alt="Архитектурный блог" class="w-62 mr-1 mb-4">
-                        <img src="img/modern/mark-boss-Xf2kJBZ2aJA-unsplash 1.jpg" alt="Архитектурный блог" class="col-span-2 mb-1">
+        <section class="modern mb-18 md:flex justify-center">
+            <div class="flex-col">
+                <a href="#" class="modern__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full hover:bg-red-800 hover:text-opacity-75">Современные здания</a>
+                <div class="modern__container md:flex w-92 justify-center mt-3" style="outline: 1px solid yellow">
+                    <div class="office__container pr-10">
+                        <img src="img/modern/sasha-yudaev-FOYsU4uQqqM-unsplash 1.jpg" alt="Архитектурный блог" class="md:w-79 ml-1">   
+                        <h2 class="office__h2 mt-3 ml-1 text-lg hover:underline cursor-pointer">Офисные здания</h2>
                     </div>
-                    <h2 class="living__h2 ml-1 text-lg">Жилые помещения</h2>
+                    <div class="living__container flex-col mr-1">
+                        <div class="grid grid-cols-2">
+                            <img src="img/modern/yann-allegre-v1jO6pN45_4-unsplash 1.jpg" alt="Архитектурный блог" class="md:w-58" >
+                            <img src="img/modern/jude-beck-sPuSvj2g_C8-unsplash 1.jpg" alt="Архитектурный блог" class="md:w-62 mr-1 mb-4">
+                            <img src="img/modern/mark-boss-Xf2kJBZ2aJA-unsplash 1.jpg" alt="Архитектурный блог" class="col-span-2 mb-1">
+                        </div>
+                        <h2 class="living__h2 ml-1 text-lg hover:underline cursor-pointer">Жилые помещения</h2>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="email w-full bg-gray-300 flex justify-center">
+        <section class="email w-full bg-gray-300 flex justify-center" style="outline: 1px solid yellow">
             <div class="wrapper mt-16">
                 <h2 class="email__h2 text-2xl mb-4 ml-3 mb-4">Подпишитесь на нашу e-mail рассылку</h2>
                 <div class="flex justify-center mb-16">
-                    <input type="email" class="email__input w-59 border-gray-400 border-2" placeholder="Введите Ваш e-mail">
-                    <button class="email__button btn w-37 text-center ml-1 top-0 text-white bg-gray-700" type="button">Подписаться</button>
+                    <input type="email" class="email__input w-59 border-gray-400 border-2 hover:border-gray-500 focus:outline-none focus:border-gray-500" placeholder="Введите Ваш e-mail">
+                    <button class="email__button btn w-37 text-center ml-1 top-0 text-white bg-gray-700 hover:bg-gray-900 hover:text-opacity-50 focus:outline-none focus:border-yellow-100 focus:border-2" type="button">Подписаться</button>
                 </div>
             </div>
         </section>
-        <section class="old px-64 mt-18 mb-18">
-            <a href="#" class="old__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full">Старинные здания</a>
-            <div class="grid grid-cols-2 mt-6">
-                <div class="religion__container flex-col">
-                    <img src="img/religion/krishna-moorthy-d-SPvxAdwoUzw-unsplash 1.jpg" alt="Архитектурный блог" class="ml-1 pr-2">  
-                    <h2 class="religion__h2 ml-2 mt-1 text-lg">Религиозные строения</h2>
+        <section class="old md:flex justify-center mt-18 mb-18">
+            <div class="flex-col">
+                <a href="#" class="old__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full hover:bg-red-800 hover:text-opacity-75">Старинные здания</a>
+                <div class="md:flex w-92 justify-center">
+                <div class="grid grid-cols-2 mt-6">
+                    <div class="religion__container flex-col">
+                        <img src="img/religion/krishna-moorthy-d-SPvxAdwoUzw-unsplash 1.jpg" alt="Архитектурный блог" class="ml-1 pr-2">  
+                        <h2 class="religion__h2 ml-2 mt-1 text-lg hover:underline cursor-pointer">Религиозные строения</h2>
+                    </div>
+                    <div class="turism__container flex-col">
+                        <div class="flex">
+                            <div class="flex-col mr-8">
+                                <img src="img/religion/ashim-d-silva-_4HhZOUEwmw-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8 mb-2">
+                                <img src="img/religion/yeo-khee-hyZ8ln856Ag-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8">
+                            </div>
+                            <img src="img/religion/filip-gielda-VPavA7BBxK0-unsplash 1.jpg" alt="Архитектурный блог" class="w-38 ml-4 mr-2">  
+                        </div>  
+                        <h2 class="turism__h2 ml-8 mt-2 text-lg hover:underline cursor-pointer">Туристические здания</h2>
+                        
+                    </div>
                 </div>
-                <div class="turism__container flex-col">
-                    <div class="flex">
-                        <div class="flex-col mr-8">
-                            <img src="img/religion/ashim-d-silva-_4HhZOUEwmw-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8 mb-2">
-                            <img src="img/religion/yeo-khee-hyZ8ln856Ag-unsplash 1.jpg" alt="Архитектурный блог" class="w-58 ml-8">
-                        </div>
-                        <img src="img/religion/filip-gielda-VPavA7BBxK0-unsplash 1.jpg" alt="Архитектурный блог" class="w-38 ml-4 mr-2">  
-                    </div>  
-                    <h2 class="turism__h2 ml-8 mt-2 text-lg">Туристические здания</h2>
-                    
-                </div>
+            </div>
             </div>
         </section>
         <section class="unususal w-full relative h-82 flex justify-center" style="background: url(img/unusual.png)">
             <!-- <img src="img/unusual.png" alt="Архитектурный блог" class="relative"> -->
-            <button type="button" class="unususal__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full absolute top-0 mt-13">Архитектурные новости</button>
+            <button type="button" class="unususal__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full absolute top-0 mt-13 hover:bg-red-800 hover:text-opacity-75">Архитектурные новости</button>
             <h2 class="unusual__h2 w-87 ml-12 text-5xl absolute top-0 mr-12 mt-36 text-center leading-12 text-white">Самые необычные здания <span>во всем мире</span></h2>
-            <a href="№" class="absolute top-0 ml-2 mt-48 w-37 mr-1 py-1 text-center top-0 ml-2 mt-65 text-white border-white border-2">Смотреть</a>
+            <a href="№" class="absolute top-0 ml-2 mt-48 w-37 mr-1 py-1 text-center top-0 ml-2 mt-65 text-white border-white border-2 hover:bg-white hover:text-red-500">Смотреть</a>
             <div class="unusual__slider"></div>
             <div class="unusual__arrow-left"></div>
             <div class="unusual__arrow-right"></div>
         </section>
-        <section class="email w-full bg-gray-300 flex h-56 justify-center pb-16">
+        <section class="email w-full bg-gray-300 flex md:min-h-56 justify-center pb-16">
             <div class="wrapper mt-16">
                 <h2 class="email__h2 text-2xl mb-4">Подпишитесь на нашу e-mail рассылку</h2>
                 <div class="flex justify-center">
-                    <input type="email" class="email__input w-60 border-gray-400 border-2 ml-2 h-10" placeholder="Введите Ваш e-mail">
-                    <button class="email__button mr-2 btn w-36 text-center top-0 text-white bg-gray-700" type="button">Подписаться</button>
+                    <input type="email" class="email__input w-60 border-gray-400 border-2 ml-2 h-10 hover:border-gray-500 focus:border-gray-500 active:border-gray-500 focus:outline-none" placeholder="Введите Ваш e-mail">
+                    <button class="email__button mr-2 btn w-36 text-center top-0 text-white bg-gray-700 hover:bg-gray-900 hover:text-opacity-50 focus:outline-none" type="button">Подписаться</button>
                 </div>
             </div>
         </section>
     </main>
     <footer class="w-full  bg-gray-900">
-        <ul class="flex justify-center items-center h-24">
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
-            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2"></i></a></li>
-            <li class="social-icon"><i class="fab fa-twitter icon mr-2"></i></li>
+        <ul class="flex justify-center items-center py-8">
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></li>
+            <li class="social-icon"><a href="#"><i class="fab fa-facebook-f icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></a></li>
+            <li class="social-icon"><i class="fab fa-twitter icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></li>
         </ul>
     </footer>
     <script src="../figma/node_modules/pixel-glass/script.js"></script>
