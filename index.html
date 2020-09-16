@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Figma stylesheet with tailwind</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="public/style.css">
@@ -41,9 +41,9 @@
     /* </style> */ -->
 </head>
 <body>
-    <header>
+    <header >
         <h1 class="flex justify-center">
-            <img src="img/Vector.png" alt="Архитектурный блог" class="w-64 h-8 mt-21 mb-12">
+            <img src="img/Vector.png" alt="Архитектурный блог" class="md:w-64 h-8 mt-21 mb-12">
         </h1>
         <nav>
             <ul class="flex justify-center text-sm mb-5">
@@ -57,7 +57,7 @@
     <main>
         <section class="news md:flex justify-center mb-22">
  
-                <div class="news__container md:w-92 flex justify-center pl-1" style="outline: 1px solid yellow">
+                <div class="news__container md:w-92 flex justify-center pl-1">
                     <!-- <div class="grid grid-cols-2" style="outline: 2px solid yellow"> -->
                         <div class="news__post relative">
                             <img src="img/news/Bitmap.png" alt="Архитектурный блог" class="relative pr-2">
@@ -83,7 +83,7 @@
         <section class="modern mb-18 md:flex justify-center">
             <div class="flex-col">
                 <a href="#" class="modern__button px-4 py-1 ml-2 text-sm bg-red-500 text-white rounded-full hover:bg-red-800 hover:text-opacity-75">Современные здания</a>
-                <div class="modern__container md:flex w-92 justify-center mt-3" style="outline: 1px solid yellow">
+                <div class="modern__container md:flex w-92 justify-center mt-3">
                     <div class="office__container pr-10">
                         <img src="img/modern/sasha-yudaev-FOYsU4uQqqM-unsplash 1.jpg" alt="Архитектурный блог" class="md:w-79 ml-1">   
                         <h2 class="office__h2 mt-3 ml-1 text-lg hover:underline cursor-pointer">Офисные здания</h2>
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </section>
-        <section class="email w-full bg-gray-300 flex justify-center" style="outline: 1px solid yellow">
+        <section class="email w-full bg-gray-300 flex justify-center">
             <div class="wrapper mt-16">
                 <h2 class="email__h2 text-2xl mb-4 ml-3 mb-4">Подпишитесь на нашу e-mail рассылку</h2>
                 <div class="flex justify-center mb-16">
@@ -163,6 +163,6 @@
             <li class="social-icon"><i class="fab fa-twitter icon mr-2 hover:text-opacity-50 hover:border-opacity-50"></i></li>
         </ul>
     </footer>
-    <script src="../figma/node_modules/pixel-glass/script.js"></script>
+    <!-- <script src="../figma/node_modules/pixel-glass/script.js"></script> -->
 </body>
 </html>
